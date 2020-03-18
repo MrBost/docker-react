@@ -7,4 +7,7 @@ before_install:
 
     
 script:
-    - docker run mrbost/docker-react npm run test
+    - docker run mrbost/docker-react npm run test -- --coverage
+
+env:
+    - YARN_GPS=no
